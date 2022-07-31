@@ -1,0 +1,18 @@
+/*
+ * dc_motor.c
+ *
+ *  Created on: Oct 15, 2021
+ *      Author: Mahmoud
+ */
+#include"dc_motor.h"
+#include"pwm.h"
+#include"gpio.h"
+void DcMotor_Init(void)
+{
+	GPIO_setupPinDirection(DC_MOTOR_INPUT1_PORTID,DC_MOTOR_INPUT1_PINID,PIN_OUTPUT);
+	GPIO_setupPinDirection(DC_MOTOR_INPUT2_PORTID,DC_MOTOR_INPUT2_PINID,PIN_OUTPUT);
+
+	GPIO_writePin(DC_MOTOR_INPUT1_PORTID,DC_MOTOR_INPUT1_PINID,LOGIC_LOW);
+	GPIO_writePin(DC_MOTOR_INPUT2_PORTID,DC_MOTOR_INPUT2_PINID,LOGIC_LOW);
+
+}

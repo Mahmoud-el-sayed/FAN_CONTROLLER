@@ -1,0 +1,13 @@
+/*
+ * dc_motor.c
+ *
+ *  Created on: Oct 15, 2021
+ *      Author: Mahmoud
+ */
+#include"dc_motor.h"
+#include"pwm.h"
+#include"gpio.h"
+void DcMotor_Init(void)
+{
+
+}

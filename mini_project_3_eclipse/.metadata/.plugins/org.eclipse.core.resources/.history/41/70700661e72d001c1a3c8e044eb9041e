@@ -1,0 +1,22 @@
+/*
+ * dc_motor.h
+ *
+ *  Created on: Oct 15, 2021
+ *      Author: Mahmoud
+ */
+typedef enum
+{
+	STOP,C_W
+}DcMotor_State ;
+#ifndef DC_MOTOR_H_
+#define DC_MOTOR_H_
+#include"std_types.h"
+#include"common_macros.h"
+
+
+
+void DcMotor_Init(void);
+void DcMotor_Rotate(DcMotor_State state,uint8 speed);
+
+
+#endif /* DC_MOTOR_H_ */
